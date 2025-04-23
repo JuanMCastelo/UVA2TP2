@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gimnasio FitLife - Registro</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Gimnasio FitLife</h1>
+    <p>¡Transforma tu cuerpo, transforma tu vida!</p>
+  </header>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#registro">Registro</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="container">
+    <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=800&q=80" alt="Gimnasio" class="img-banner">
+    <h2 id="registro">Formulario de Registro</h2>
+    <form>
+      <label for="nombre">Nombre Completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono">
+
+      <label for="plan">Selecciona tu Plan:</label>
+      <select id="plan" name="plan">
+        <option value="basico">Básico</option>
+        <option value="intermedio">Intermedio</option>
+        <option value="premium">Premium</option>
+      </select>
+
+      <label for="horario">Horario Preferido:</label>
+      <select id="horario" name="horario">
+        <option value="manana">Mañana (6:00 - 10:00)</option>
+        <option value="tarde">Tarde (12:00 - 16:00)</option>
+        <option value="noche">Noche (18:00 - 22:00)</option>
+      </select>
+
+      <label for="comentarios">Comentarios o necesidades especiales:</label>
+      <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+      <input type="submit" value="Registrarse">
+    </form>
+  </div>
+</body>
+</html>
